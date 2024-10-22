@@ -19,5 +19,9 @@ window.onload = ()=>{
 }
 
 function fileLetto(file){
-    console.log(file.target.result);
+    console.log(JSON.parse(file.target.result));
+    let arrayString = file.target.result;
+    let array = JSON.parse(file.target.result);
+    console.log(array[0]);
+    console.log(arrayString[0]);
 }
